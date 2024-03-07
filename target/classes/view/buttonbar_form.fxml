@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" prefHeight="690.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Jayabima.controller.ButtonBarFormController">
+   <children>
+      <AnchorPane prefHeight="690.0" prefWidth="250.0" style="-fx-background-color: #051A2E;">
+         <children>
+            <ImageView fitHeight="91.0" fitWidth="79.0" layoutX="86.0" layoutY="12.0">
+               <image>
+                  <Image url="@../image/dashboardicon.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="dashbtn" layoutY="173.0" onAction="#btnDashBoardOnAction" prefHeight="52.0" prefWidth="250.0" style="-fx-alignment: left;" stylesheets="@../style/sidepanel.css" text="     Dashboard" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../image/icons8-dashboard-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="cusbtn" layoutY="226.0" onAction="#btnManageCustomersOnAction" prefHeight="52.0" prefWidth="250.0" style="-fx-alignment: left;" stylesheets="@../style/sidepanel.css" text="     Manage Customers" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../image/icons8-customers-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="supbtn" layoutY="279.0" onAction="#btnManageSuppliersOnAction" prefHeight="52.0" prefWidth="250.0" style="-fx-alignment: left;" stylesheets="@../style/sidepanel.css" text="     Manage Suppliers" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../image/icons8-supplier-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="empbtn" layoutY="385.0" onAction="#btnManageEmployees" prefHeight="52.0" prefWidth="250.0" style="-fx-alignment: left;" stylesheets="@../style/sidepanel.css" text="     Manage Employees" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../image/icons8-employee-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="placebtn" layoutY="491.0" onAction="#btnPlaceOrder" prefHeight="52.0" prefWidth="250.0" style="-fx-alignment: left;" stylesheets="@../style/sidepanel.css" text="     Place Order" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../image/icons8-shopping-cart-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="51.0" layoutY="621.0" onAction="#btnLogoutOnAction" prefHeight="54.0" prefWidth="144.0" stylesheets="@../style/sidepanel.css" text=" Logout" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../image/icons8-logout-60.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="itembtn" layoutY="332.0" onAction="#btnManageItemsOnAction" prefHeight="52.0" prefWidth="250.0" style="-fx-alignment: left;" stylesheets="@../style/sidepanel.css" text="     Manage Items" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../image/icons8-open-box-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="orderbtn" layoutY="438.0" onAction="#btnManageOrders" prefHeight="52.0" prefWidth="250.0" style="-fx-alignment: left;" stylesheets="@../style/sidepanel.css" text="     Manage Orders" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../image/icons8-minimum-order-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label fx:id="lbluser" layoutX="11.0" layoutY="121.0" prefHeight="38.0" prefWidth="228.0" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="rootHome" layoutX="250.0" prefHeight="690.0" prefWidth="1116.0" style="-fx-alignment: left;" />
+   </children>
+</AnchorPane>
